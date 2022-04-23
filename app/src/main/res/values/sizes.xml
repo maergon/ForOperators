@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeFontAdd">25sp</dimen>
+    <dimen name="sizeFontRV">15sp</dimen>
+    <dimen name="sizeEditTextWidth">230dp</dimen>
+    <dimen name="sizeEditTextHeight">55dp</dimen>
+</resources>

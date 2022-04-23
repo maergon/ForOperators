@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Скважина"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationNumberUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Частота"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationFrequencyUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ток"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationCurrentUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Загрузка"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationLoadingUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ЗСП"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationZspUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Давление"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationPressureUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Температура"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationTemperatureUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Запуск"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationProgramStartUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Окончание"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationProgramEndUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Изоляция"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/etStationIsolationUpdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_gravity="end"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etKP"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeEditTextHeight"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sizeFontAdd" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCopyKP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_rounded"
+                android:text="Копировать" />
+
+            <Button
+                android:id="@+id/btnDeleteStationParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_rounded"
+                android:text="Удалить"
+                android:textColor="@color/red" />
+
+            <Button
+                android:id="@+id/btnUpdateStationParams"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_rounded"
+                android:text="Изменить" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

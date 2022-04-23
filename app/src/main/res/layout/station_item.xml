@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="13dp"
+            android:stretchColumns="*">
+
+            <TextView
+                android:id="@+id/tv_station_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="55122"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="F"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="I"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Загр"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="3"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="ЗСП"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="4"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Рпр"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="5"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Т"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="6"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="С"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="О"
+                    android:textSize="@dimen/sizeFontRV" />
+
+                <TextView
+                    android:layout_column="8"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="Rиз"
+                    android:textSize="@dimen/sizeFontRV" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAlignment="center">
+
+                <TextView
+                    android:id="@+id/tv_station_frequency"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_current"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="2"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_loading"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="3"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_zsp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_pressure"
+                    android:layout_column="4"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="6"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_temperature"
+                    android:layout_column="5"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="5"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_start"
+                    android:layout_column="6"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="7"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_end"
+                    android:layout_column="7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="8"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_station_isolation"
+                    android:layout_column="8"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="9"
+                    android:textSize="20sp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

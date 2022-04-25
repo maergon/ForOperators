@@ -25,8 +25,8 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
-    FloatingActionButton add_button;
-    CustomAdapter customAdapter;
+    FloatingActionButton addButton;
+    CustomAdapterSH customAdapterSH;
 
     ImageView ivEmpty;
     TextView tvNoData;
@@ -42,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.recyclerView);
-        add_button = findViewById(R.id.add_button);
+        addButton = findViewById(R.id.add_button);
         ivEmpty = findViewById(R.id.iv_empty);
         tvNoData = findViewById(R.id.tvNoData);
 
-        add_button.setOnClickListener(new View.OnClickListener() {
+        addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AddActivity.class);
@@ -69,11 +69,11 @@ public class MainActivity extends AppCompatActivity {
 
         storeDataInArray();
 
-        customAdapter = new CustomAdapter(MainActivity.this, this, station_id,
+        customAdapterSH = new CustomAdapterSH(MainActivity.this, this, station_id,
                 station_number, station_frequency,
                 station_current, station_loading, station_zsp, station_temperature,
                 station_pressure, station_start, station_end, station_isolation);
-        recyclerView.setAdapter(customAdapter);
+        recyclerView.setAdapter(customAdapterSH);
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void storeDataInArray() {
-        Cursor cursor = myDB.readAllData();
+        Cursor cursor = myDB.readAllDataStationHelper();
 
         if (cursor.getCount() == 0) {
             ivEmpty.setVisibility(View.VISIBLE);
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(MainActivity.this);
-                myDB.deleteAllData();
+                myDB.deleteAllDataStationHelper();
                 //Refresh Activity
                 Intent intent = new Intent(MainActivity.this, MainActivity.class);
                 startActivity(intent);

@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class CustomAdapterST extends RecyclerView.Adapter<CustomAdapterST.MyViewHolder> {
     Context context;
     Activity activity;
     Animation translate_anim;
@@ -25,10 +25,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             station_current, station_loading, station_zsp, station_temperature,
             station_pressure, station_start, station_end, station_isolation;
 
-    public CustomAdapter(Activity activity, Context context, ArrayList station_id, ArrayList station_number,
-                         ArrayList station_frequency, ArrayList station_current, ArrayList station_loading,
-                         ArrayList station_zsp, ArrayList station_temperature, ArrayList station_pressure,
-                         ArrayList station_start, ArrayList station_end, ArrayList station_isolation) {
+    public CustomAdapterST(Activity activity, Context context, ArrayList station_id, ArrayList station_number,
+                           ArrayList station_frequency, ArrayList station_current, ArrayList station_loading,
+                           ArrayList station_zsp, ArrayList station_temperature, ArrayList station_pressure,
+                           ArrayList station_start, ArrayList station_end, ArrayList station_isolation) {
         this.activity = activity;
         this.context = context;
         this.station_id = station_id;

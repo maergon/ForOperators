@@ -1,6 +1,5 @@
 package com.malkollm.foroperators;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -64,7 +63,7 @@ public class UpdateActivity extends AppCompatActivity {
                 end = etStationProgramEndUpdate.getText().toString().trim();
                 isolation = etStationIsolationUpdate.getText().toString().trim();
 
-                myDB.updateData(id, number, frequency, current, loading, zsp, temperature, pressure, start, end, isolation);
+                myDB.updateDataStationHelper(id, number, frequency, current, loading, zsp, temperature, pressure, start, end, isolation);
 
                 //Refresh Activity
                 Intent intent = new Intent(UpdateActivity.this, MainActivity.class);
@@ -146,7 +145,7 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
-                myDB.deleteData(id);
+                myDB.deleteDataStationHelper(id);
                 finish();
             }
         });

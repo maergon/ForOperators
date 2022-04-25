@@ -16,7 +16,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -131,6 +130,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.deleteAll:
                 confirmDialogDeleteAll();
                 break;
+            case R.id.showTasks:
+                showTasks();
             default:
                 break;
         }
@@ -140,6 +141,12 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showTasks() {
+        Intent intent = new Intent(MainActivity.this, TaskActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void dialogGetKp() {
